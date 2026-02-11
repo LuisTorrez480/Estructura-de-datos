@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int x,a,b,c;
+
+	do{
+		cout <<endl<< "menu" << endl;
+		cout << "1. suma" << endl;
+		cout << "2. positovo o negativo" << endl;
+		cout << "3. factorial" << endl;
+		cout << "0. salir" << endl;
+		cin >> x;
+		switch (x) {
+		case 1:
+			cout << "ingresar primer numero: ";
+			cin >> a;
+				cout <<endl<< "ingresar segundo numero: ";
+				cin >> b;
+			cout <<endl<< "Resultado de la suma: " << a + b;
+			break;
+		case 2:
+			cout << "ingrese el numero: ";
+			cin >> a;
+			if (a > 0)  cout << "el numero es positivo"; 
+			else cout << "el numero es negativo"; 
+			break;
+		case 3:
+			cout << "ingrese hasta que numero se va a realizar: ";
+				cin >> a;
+				b = 1;
+				for (int i = 2; i <= a; i++)
+					b = b * i; //b es un acumulador
+				cout << "el factorial del numero " << a << " es: "<<b<<endl;
+			break;
+		case 0:
+			break;
+		default:
+			cout << "ERROR" << endl;
+	
+		}
+	} while (x != 0);
+
+	
+    
+	
+}
