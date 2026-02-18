@@ -1,0 +1,86 @@
+//Autor:Luis Alejandro Maximiliano Torrez La Fuente
+//Fecha:18/02/2026
+//Version:2.0
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+int suma(int a, int b);
+bool posoneg(int x);
+int fact(int a, int b);
+
+
+int main()
+{
+	int x;
+
+	do {
+		cout << endl << "menu" << endl;
+		cout << "1. suma y resto" << endl;
+		cout << "2. positovo o negativo" << endl;
+		cout << "3.factorial " << endl;
+		cout << "0. salir" << endl;
+		cin >> x;
+		switch (x) {
+		case 1:
+			int a, b;
+			cout << "ingresar primer numero: ";
+			cin >> a;
+			cout << endl << "ingresar segundo numero: ";
+			cin >> b;
+
+
+
+			cout << "la suma es: ";
+			cout << suma(a, b);
+			
+
+			
+
+			break;
+		case 2:
+			cout << "ingrese el numero: ";
+			cin >> a;
+			if (a > 0)  cout << "el numero es positivo";
+			else cout << "el numero es negativo";
+			break;
+		case 3:
+			
+			cout << "ingrese hasta que numero se va a realizar: ";
+			cin >> a;
+			
+			cout << "el factorial del numero " << a << " es: " << fact(a,b) << endl;
+			break;
+		case 0:
+			break;
+		default:
+			cout << "ERROR" << endl;
+
+		}
+	} while (x != 0);
+
+
+
+
+}
+int suma(int a, int b) {
+	
+	return a + b;
+
+}
+bool posoneg(int x) {
+	if (x > 0) { cout << "el numero es positivo"; }
+	if (x<0) { cout << "el numero es negativo"; }
+	return 0
+		;
+}
+
+int fact(int a, int b){
+
+	b = 1;
+	for (int i = 2; i <= a; i++)
+		b = b * i;
+	return 0;
+}
+
+
