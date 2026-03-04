@@ -1,0 +1,8 @@
+#include "triangulo.h"
+Triangulo::Triangulo() {
+}
+Triangulo::~Triangulo() {
+}
+float Triangulo::calculararea(float b, float h) {
+	return(b * h) / 2;
+}
